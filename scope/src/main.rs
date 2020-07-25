@@ -10,9 +10,13 @@ fn main(){
     println!("{}", b);
 }
 
-fn world(_s: &mut String) -> String {
-    String::from("world")
+fn world(_s: &mut String) -> &'static str {
+    "world"
 }
+
+//fn world(_s: &mut String) -> String {
+//    String::from("world")
+//}
 
 //fn world(_s: &mut String) -> String {
 //    "world"
